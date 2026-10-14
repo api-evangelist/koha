@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/koha/main/json-schema/koha-get-api-v1-patrons-response2-schema.json",
+  "title": "GetApiV1PatronsResponse2",
+  "x-generated": "2026-10-14",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/koha-openapi-generated.yml#/components/schemas/GetApiV1PatronsResponse2",
+  "type": "object",
+  "properties": {
+    "patron_id": {
+      "type": "integer"
+    },
+    "cardnumber": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "preferred_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "other_name": {
+      "type": "string"
+    },
+    "initials": {
+      "type": "string"
+    },
+    "pronouns": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string"
+    },
+    "library_id": {
+      "type": "string"
+    },
+    "category_id": {
+      "type": "string"
+    },
+    "date_enrolled": {
+      "type": "string"
+    },
+    "expiry_date": {
+      "type": "string"
+    },
+    "date_renewed": {
+      "type": "string"
+    },
+    "expired": {
+      "type": "boolean"
+    },
+    "restricted": {
+      "type": "boolean"
+    },
+    "staff_notes": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "userid": {
+      "type": "string"
+    },
+    "opac_notes": {
+      "type": "string"
+    },
+    "statistics_1": {
+      "type": "string"
+    },
+    "statistics_2": {
+      "type": "string"
+    },
+    "autorenew_checkouts": {
+      "type": "boolean"
+    },
+    "updated_on": {
+      "type": "string"
+    },
+    "last_seen": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "login_attempts": {
+      "type": "integer"
+    },
+    "privacy": {
+      "type": "integer"
+    },
+    "checkouts_count": {
+      "type": "integer"
+    },
+    "overdues_count": {
+      "type": "integer"
+    },
+    "account_balance": {
+      "type": "integer"
+    },
+    "protected": {
+      "type": "boolean"
+    },
+    "self_renewal_available": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,23 +1,102 @@
 aid: koha
+
 name: Koha
-description: 'Koha is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and added
-  to the network as a stub for full-pipeline profiling.'
+
+description: Koha is an open-source integrated library system (ILS) used worldwide by libraries to manage cataloging, circulation, acquisitions,
+  and public access. The Koha community provides extensive documentation, support, and development resources, making it a robust platform for
+  library automation and digital services.
+
 url: https://raw.githubusercontent.com/api-evangelist/koha/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-14 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-14'
+
 modified: '2026-10-14'
+
 tags:
-- Company
-apis: []
+- Library
+- OpenSource
+- ILS
+- Community
+- Software
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/koha-rules.yml
+- type: JSONLD
+  url: json-ld/koha-context.jsonld
+- type: Vocabulary
+  url: vocabulary/koha-vocabulary.yml
+- type: DataModel
+  url: data-model/koha-data-model.yml
+- type: Conformance
+  url: conformance/koha-conformance.yml
+- type: SecurityTxt
+  url: well-known/koha-git-security.txt
+- type: WellKnown
+  url: well-known/koha-well-known.yml
+- type: Hosts
+  url: hosts/koha-hosts.yml
+- type: SDKs
+  url: packages/koha-packages.yml
+- type: Packages
+  url: packages/koha-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/Koha-Community
+- type: DomainSecurity
+  url: security/koha-domain-security.yml
 - type: Website
   url: https://koha-community.org
+- type: Documentation
+  url: https://koha-community.org/documentation/
+- type: DeveloperPortal
+  url: https://koha-community.org/get-involved/for-developers/
+- type: Support
+  url: https://koha-community.org/get-involved/
+
+apis:
+- aid: koha:koha-api
+  name: Koha API
+  description: 'Koha API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-14); not the
+    provider''s own document.'
+  humanURL: https://api.koha-community.org
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/koha-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/koha-get-api-v1-patrons-response2-schema.json
+  - type: JSONSchema
+    url: json-schema/koha-get-api-v1-patrons-response-schema.json
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-14'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://koha-community.org
+    status: 200
+x-enrichment:
+  date: '2026-10-14'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

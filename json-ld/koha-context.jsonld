@@ -1,0 +1,230 @@
+{
+  "@context": {
+    "@vocab": "https://koha-community.org/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "koha": "https://koha-community.org/schema#",
+    "GetApiV1PatronsResponse": "koha:GetApiV1PatronsResponse",
+    "additional_content_id": {
+      "@id": "koha:additional_content_id",
+      "@type": "xsd:integer"
+    },
+    "category": {
+      "@id": "koha:category",
+      "@type": "xsd:string"
+    },
+    "code": {
+      "@id": "koha:code",
+      "@type": "xsd:string"
+    },
+    "location": {
+      "@id": "koha:location",
+      "@type": "xsd:string"
+    },
+    "library_id": {
+      "@id": "koha:library_id",
+      "@type": "xsd:string"
+    },
+    "published_on": {
+      "@id": "koha:published_on",
+      "@type": "xsd:string"
+    },
+    "updated_on": {
+      "@id": "koha:updated_on",
+      "@type": "xsd:string"
+    },
+    "expirationdate": {
+      "@id": "koha:expirationdate",
+      "@type": "xsd:string"
+    },
+    "number": {
+      "@id": "koha:number",
+      "@type": "xsd:integer"
+    },
+    "patron_id": {
+      "@id": "koha:patron_id",
+      "@type": "xsd:string"
+    },
+    "translated_contents": {
+      "@id": "koha:translated_contents",
+      "@container": "@list"
+    },
+    "GetApiV1PatronsResponse2": "koha:GetApiV1PatronsResponse2",
+    "cardnumber": {
+      "@id": "koha:cardnumber",
+      "@type": "xsd:string"
+    },
+    "surname": {
+      "@id": "koha:surname",
+      "@type": "xsd:string"
+    },
+    "firstname": {
+      "@id": "koha:firstname",
+      "@type": "xsd:string"
+    },
+    "preferred_name": {
+      "@id": "koha:preferred_name",
+      "@type": "xsd:string"
+    },
+    "middle_name": {
+      "@id": "koha:middle_name",
+      "@type": "xsd:string"
+    },
+    "title": {
+      "@id": "koha:title",
+      "@type": "xsd:string"
+    },
+    "other_name": {
+      "@id": "koha:other_name",
+      "@type": "xsd:string"
+    },
+    "initials": {
+      "@id": "koha:initials",
+      "@type": "xsd:string"
+    },
+    "pronouns": {
+      "@id": "koha:pronouns",
+      "@type": "xsd:string"
+    },
+    "address": {
+      "@id": "koha:address",
+      "@type": "xsd:string"
+    },
+    "address2": {
+      "@id": "koha:address2",
+      "@type": "xsd:string"
+    },
+    "city": {
+      "@id": "koha:city",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "koha:state",
+      "@type": "xsd:string"
+    },
+    "postal_code": {
+      "@id": "koha:postal_code",
+      "@type": "xsd:string"
+    },
+    "country": {
+      "@id": "koha:country",
+      "@type": "xsd:string"
+    },
+    "email": {
+      "@id": "koha:email",
+      "@type": "xsd:string"
+    },
+    "phone": {
+      "@id": "koha:phone",
+      "@type": "xsd:string"
+    },
+    "mobile": {
+      "@id": "koha:mobile",
+      "@type": "xsd:string"
+    },
+    "fax": {
+      "@id": "koha:fax",
+      "@type": "xsd:string"
+    },
+    "date_of_birth": {
+      "@id": "koha:date_of_birth",
+      "@type": "xsd:string"
+    },
+    "category_id": {
+      "@id": "koha:category_id",
+      "@type": "xsd:string"
+    },
+    "date_enrolled": {
+      "@id": "koha:date_enrolled",
+      "@type": "xsd:string"
+    },
+    "expiry_date": {
+      "@id": "koha:expiry_date",
+      "@type": "xsd:string"
+    },
+    "date_renewed": {
+      "@id": "koha:date_renewed",
+      "@type": "xsd:string"
+    },
+    "expired": {
+      "@id": "koha:expired",
+      "@type": "xsd:boolean"
+    },
+    "restricted": {
+      "@id": "koha:restricted",
+      "@type": "xsd:boolean"
+    },
+    "staff_notes": {
+      "@id": "koha:staff_notes",
+      "@type": "xsd:string"
+    },
+    "gender": {
+      "@id": "koha:gender",
+      "@type": "xsd:string"
+    },
+    "userid": {
+      "@id": "koha:userid",
+      "@type": "xsd:string"
+    },
+    "opac_notes": {
+      "@id": "koha:opac_notes",
+      "@type": "xsd:string"
+    },
+    "statistics_1": {
+      "@id": "koha:statistics_1",
+      "@type": "xsd:string"
+    },
+    "statistics_2": {
+      "@id": "koha:statistics_2",
+      "@type": "xsd:string"
+    },
+    "autorenew_checkouts": {
+      "@id": "koha:autorenew_checkouts",
+      "@type": "xsd:boolean"
+    },
+    "last_seen": {
+      "@id": "koha:last_seen",
+      "@type": "xsd:string"
+    },
+    "lang": {
+      "@id": "koha:lang",
+      "@type": "xsd:string"
+    },
+    "login_attempts": {
+      "@id": "koha:login_attempts",
+      "@type": "xsd:integer"
+    },
+    "privacy": {
+      "@id": "koha:privacy",
+      "@type": "xsd:integer"
+    },
+    "checkouts_count": {
+      "@id": "koha:checkouts_count",
+      "@type": "xsd:integer"
+    },
+    "overdues_count": {
+      "@id": "koha:overdues_count",
+      "@type": "xsd:integer"
+    },
+    "account_balance": {
+      "@id": "koha:account_balance",
+      "@type": "xsd:integer"
+    },
+    "protected": {
+      "@id": "koha:protected",
+      "@type": "xsd:boolean"
+    },
+    "self_renewal_available": {
+      "@id": "koha:self_renewal_available",
+      "@type": "xsd:boolean"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Koha API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Koha's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-14) from openapi/_ae-authored/koha-openapi-generated.yml.",
+  "dcterms:created": "2026-10-14",
+  "dcterms:source": [
+    "openapi/_ae-authored/koha-openapi-generated.yml"
+  ]
+}

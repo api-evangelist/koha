@@ -1,0 +1,18 @@
+generated: '2026-10-14'
+method: probed
+source: https://koha-community.org/privacy-policy/
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://koha-community.org/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you."
+    note: Users can request data export and deletion, indicating a data subject request process.
+  data_retention:
+    evidence:
+      - source: https://koha-community.org/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "How long we retain your data If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow‑up comments automatically instead of holding them in a moderation queue."
+    note: Comments are retained indefinitely, showing their data retention policy.

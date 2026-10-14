@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/koha/main/json-schema/koha-get-api-v1-patrons-response-schema.json",
+  "title": "GetApiV1PatronsResponse",
+  "x-generated": "2026-10-14",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/koha-openapi-generated.yml#/components/schemas/GetApiV1PatronsResponse",
+  "type": "object",
+  "properties": {
+    "additional_content_id": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "library_id": {
+      "type": "string"
+    },
+    "published_on": {
+      "type": "string"
+    },
+    "updated_on": {
+      "type": "string"
+    },
+    "expirationdate": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "patron_id": {
+      "type": "string"
+    },
+    "translated_contents": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

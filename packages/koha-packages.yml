@@ -1,0 +1,15 @@
+generated: '2026-10-14'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/Koha-Community
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (koha-community.org,
+  security/koha-domain-security.yml) or its accepted GitHub org (Koha-Community).'
+packages:
+- name: koha
+  registry: rubygems
+  url: https://rubygems.org/gems/koha
+  language: Ruby
+  official: true
+  version: 0.0.4
+  published: '2013-05-07'
+  evidence: metadata names github.com/Koha-Community

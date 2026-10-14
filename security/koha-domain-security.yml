@@ -1,0 +1,16 @@
+generated: '2026-10-14'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: koha-community.org
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 26 06:47:28 2026 GMT
+  hsts: false
+domains:
+- domain: koha-community.org
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

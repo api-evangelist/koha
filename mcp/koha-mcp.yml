@@ -1,0 +1,19 @@
+generated: '2026-10-14'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/koha-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on koha-community.org, api.koha-community.org, bugs.koha-community.org,
+  chat.koha-community.org; verdict absent. Candidate tools below are derived from the 1 operation(s) in the provider's own OpenAPI (1 listed);
+  they describe what a server WOULD expose, not one that exists.
+tools:
+- name: get_api_v1_patrons
+  operationId: get_api_v1_patrons
+  method: GET
+  path: /api/v1/patrons
+  description: GET /api/v1/patrons
