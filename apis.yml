@@ -69,20 +69,19 @@ common:
   url: https://koha-community.org/get-involved/
 
 apis:
-- aid: koha:koha-api
-  name: Koha API
-  description: 'Koha API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-14); not the
-    provider''s own document.'
+- aid: koha:koha-patrons-api
+  name: Koha Patrons API
+  description: The Patrons API from Koha — 2 operation(s) for patrons.
   humanURL: https://api.koha-community.org
+  tags:
+  - Patrons
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/koha-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/koha-patrons-api-openapi.yml
   - type: JSONSchema
     url: json-schema/koha-get-api-v1-patrons-response2-schema.json
   - type: JSONSchema
     url: json-schema/koha-get-api-v1-patrons-response-schema.json
-
 x-coverage:
   state: none
   reason: no-developer-program

@@ -1,0 +1,188 @@
+openapi: 3.2.0
+info:
+  title: Koha Patrons API
+  version: '2026-10-14'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-14: 2 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Koha has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 1
+    pages-with-code: 8
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-14'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://api.koha-community.org
+  - https://api.koha-community.org/26.05.html
+  - https://api.koha-community.org/25.11.html
+  - https://api.koha-community.org/25.05.html
+  - https://api.koha-community.org/24.11.html
+  - https://api.koha-community.org/24.05.html
+  - https://api.koha-community.org/23.11.html
+  - https://api.koha-community.org/23.05.html
+tags:
+- name: Patrons
+paths:
+  /api/v1/patrons:
+    get:
+      operationId: get_api_v1_patrons
+      tags:
+      - Patrons
+      summary: GET /api/v1/patrons
+      x-source: https://api.koha-community.org
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1PatronsResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u koha:koha --request GET \"http://127.0.0.1:8081/api/v1/patrons/\" --data-raw '{ \"surname\": \"Acevedo\", \"firstname\": \"Henry\" }' \n The following request would return any patron whose lastname begins with \"Ace\"; "
+  /api/v1/patrons/:
+    get:
+      operationId: getApiV1Patrons
+      tags:
+      - Patrons
+      summary: Patrons
+      x-source: https://api.koha-community.org
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1PatronsResponse2'
+      x-evidence:
+        kind: documentation
+      x-operation-id-source: normalized
+      x-operation-id-original: get_api_v1_patrons
+components:
+  schemas:
+    GetApiV1PatronsResponse2:
+      type: object
+      properties:
+        patron_id:
+          type: integer
+        cardnumber:
+          type: string
+        surname:
+          type: string
+        firstname:
+          type: string
+        preferred_name:
+          type: string
+        middle_name:
+          type: string
+        title:
+          type: string
+        other_name:
+          type: string
+        initials:
+          type: string
+        pronouns:
+          type: string
+        address:
+          type: string
+        address2:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        postal_code:
+          type: string
+        country:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        mobile:
+          type: string
+        fax:
+          type: string
+        date_of_birth:
+          type: string
+        library_id:
+          type: string
+        category_id:
+          type: string
+        date_enrolled:
+          type: string
+        expiry_date:
+          type: string
+        date_renewed:
+          type: string
+        expired:
+          type: boolean
+        restricted:
+          type: boolean
+        staff_notes:
+          type: string
+        gender:
+          type: string
+        userid:
+          type: string
+        opac_notes:
+          type: string
+        statistics_1:
+          type: string
+        statistics_2:
+          type: string
+        autorenew_checkouts:
+          type: boolean
+        updated_on:
+          type: string
+        last_seen:
+          type: string
+        lang:
+          type: string
+        login_attempts:
+          type: integer
+        privacy:
+          type: integer
+        checkouts_count:
+          type: integer
+        overdues_count:
+          type: integer
+        account_balance:
+          type: integer
+        protected:
+          type: boolean
+        self_renewal_available:
+          type: boolean
+    GetApiV1PatronsResponse:
+      type: object
+      properties:
+        additional_content_id:
+          type: integer
+        category:
+          type: string
+        code:
+          type: string
+        location:
+          type: string
+        library_id:
+          type: string
+        published_on:
+          type: string
+        updated_on:
+          type: string
+        expirationdate:
+          type: string
+        number:
+          type: integer
+        patron_id:
+          type: string
+        translated_contents:
+          type: array
+          items:
+            type:
+            - string
+            - 'null'
